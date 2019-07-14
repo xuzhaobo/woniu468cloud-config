@@ -1,5 +1,5 @@
 server:
-  port: 8003         #当前服务的端口号
+  port: 7500         #当前服务的端口号
   
   
 eureka:
@@ -7,7 +7,7 @@ eureka:
     service-url: 
        defaultZone: http://eurakeserver9000.com:9000/eureka,http://eurakeserver9001.com:9001/eureka,http://eurakeserver9002.com:9002/eureka
   instance: 
-    instance-id: woniucloud-config-client # 配置注册中心显示出来的微服务名称
+    instance-id: woniucloud-config-client-dev # 配置注册中心显示出来的微服务名称
     prefer-ip-address: true     #访问路径可以显示IP地址  
     
 spring:
@@ -17,7 +17,7 @@ spring:
 ---
 
 server:
-  port: 8004         #当前服务的端口号
+  port: 7500         #当前服务的端口号
   
   
 eureka:
@@ -25,7 +25,7 @@ eureka:
     service-url: 
        defaultZone: http://eurakeserver9000.com:9000/eureka,http://eurakeserver9001.com:9001/eureka,http://eurakeserver9002.com:9002/eureka
   instance: 
-    instance-id: woniucloud-config-client # 配置注册中心显示出来的微服务名称
+    instance-id: woniucloud-config-client-test # 配置注册中心显示出来的微服务名称
     prefer-ip-address: true     #访问路径可以显示IP地址  
     
 spring: 
